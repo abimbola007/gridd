@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+    }
+
+    .container{
+      height: 500px;
+      width: 500px;
+      border: 8px solid aliceblue;
+      background-color: black;
+      display: grid;
+      gap:9px ;
+      grid-template-columns: 1fr 2fr 1fr 0.2fr ;
+      grid-template-rows: 0.5fr 0.5fr 1fr 0.1fr  ;
+    }
+.item{
+  background-color: aquamarine;
+}
+.red{
+  background-color: red;
+}
+.white2{
+  background-color: red;
+}
+.white1{
+  background-color: aliceblue;
+  grid-area:1/2/2/5 ;
+}
+.white3{
+  background-color: aliceblue;
+  grid-area:2/2/4/4 ;
+}
+.white4{
+  background-color: aliceblue;
+  grid-area:3/1/5/2 ;
+}
+.yellow{
+  background-color: yellow;
+  grid-area:2/4/4/5
+}
+.white5{
+ 
+  background-color: blue;
+  grid-area: 4/2/5/4;
+  grid-auto-columns: 40px;
+}
+.blue{
+  border-left: solid 10px;
+  background-color: aliceblue;
+  grid-area:-1/-1/-2/-3 ;
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class=" item red"></div>
+    <div class="item white1"></div>
+    <div class="item white2"></div>
+    <div class="item white3"></div>
+    <div class="item yellow"></div>
+    <div class="item white4"></div>
+    <div class="item white5"></div>
+    <div class="item blue"></div>
+    
+   
+  </div>
+</body>
+
+</html>
